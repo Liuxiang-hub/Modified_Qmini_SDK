@@ -73,20 +73,22 @@ public:
     char get_selected_jskey(char &mode) {
         char key = '0';
         jsreader.fetchJoystickData();
-        if ((int) jsreader.But[9]== 1) {///start ready
+        if ((int) jsreader.But[9] == 1) { /// START ready
             key = '1';
-        } else if ((int) jsreader.But[0] == 1) { ///A stand
-            key = '2';
-        } else if ((int) jsreader.But[3] == 1) {///Y motion
+        } else if ((int) jsreader.But[0] == 1) { /// but0 = cancel
+            key = 'q';
+        } else if ((int) jsreader.But[2] == 1) { /// but2 = RL walking
             rl_task_mode = 3;
             key = '3';
-        }else if ((int) jsreader.But[2] == 1) {///RL stand
+        } else if ((int) jsreader.But[3] == 1) { /// but3 = standing
+            key = '2';
+        } else if ((int) jsreader.But[1] == 1) { /// but1 = RL stand
             rl_task_mode = 4;
             key = '4';
-        } else if ((int) jsreader.But[8] == 1) {///SELECT sin test
+        } else if ((int) jsreader.But[8] == 1) { /// SELECT sin test
             rl_task_mode = 5;
             key = '5';
-        }  else if ((int) jsreader.But[4] == 1) {///lateral
+        } else if ((int) jsreader.But[4] == 1) { /// L1 lateral
             rl_task_mode = 6;
             key = '6';
         } else if ((int) jsreader.But[5] == 1) {
@@ -98,7 +100,7 @@ public:
         } else if ((int) jsreader.But[7] == 1) {
             rl_task_mode = 9;
             key = '9';
-        } else if ((int) jsreader.But[1] == 1) { key = 'q'; } //B exit
+        }
         if (key == 'q')
             return key;
         if (key >= '1') {

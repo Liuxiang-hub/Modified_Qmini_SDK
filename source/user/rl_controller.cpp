@@ -143,9 +143,11 @@ void RLController::joystick_command_process() {
     auto vx_min = configParams.vx_cmd_range.at(0);
     auto vx_max = configParams.vx_cmd_range.at(1);
     if (task_mode == 3 or task_mode == 4) {
-        ///stand
-        vx_cmd = -vx_max * jsreader->Axis[1];
-        yr_cmd = -yr_max * jsreader->Axis[2];
+        /// stand / RL control mapping per joystick: use Axis[3] for forward/back
+        /// (Axis index is 0-based; user requested Ax4 as forward with negative for forward)
+        vx_cmd = -vx_max * jsreader->Axis[3];
+        // Ax3 controls left/right, positive is right turn -> no negation
+        yr_cmd = yr_max * jsreader->Axis[2];
 
         if (fabs(yr_cmd) > 0.1 or configParams.kp_yaw_ctrl < 1e-2 or static_flag < 0.1) {
             _record_yaw = base_rpy[2];//todo
