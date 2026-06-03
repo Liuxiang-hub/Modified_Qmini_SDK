@@ -14,10 +14,10 @@ class JoyStick:
     RaxiY = 0.0    #右摇杆Y轴，axis[3]
     hatX = 0       #方向键X轴，hat[0]
     hatY = 0       #方向键Y轴，hat[1]
-    butA = 0       #A键，but[0]
-    butB = 0       #B键，but[1]
-    butX = 0       #X键，but[3]
-    butY = 0       #Y键，but[4]
+    butA = 0       #A键，but[0]  -> Button 0: Cancel
+    butB = 0       #B键，but[1]  -> Button 1: RL standing
+    butX = 0       #X键，but[2]  -> Button 2: RL walking
+    butY = 0       #Y键，but[3]  -> Button 3: Stand
     L1 = 0         #L1键，but[6]
     R1 = 0         #R1键，but[7]
     L2 = 0         #L2键，but[8]
@@ -54,8 +54,8 @@ class JoyStick:
             if event.type == pygame.JOYBUTTONDOWN:
                 self.butA = self.joystick.get_button(0)
                 self.butB = self.joystick.get_button(1)
-                self.butX = self.joystick.get_button(3)
-                self.butY = self.joystick.get_button(4)
+                self.butX = self.joystick.get_button(2)
+                self.butY = self.joystick.get_button(3)
                 self.L1 = self.joystick.get_button(6)
                 self.R1 = self.joystick.get_button(7)
                 self.L2 = self.joystick.get_button(8)
@@ -66,8 +66,8 @@ class JoyStick:
             if event.type == pygame.JOYBUTTONUP:
                 self.butA = self.joystick.get_button(0)
                 self.butB = self.joystick.get_button(1)
-                self.butX = self.joystick.get_button(3)
-                self.butY = self.joystick.get_button(4)
+                self.butX = self.joystick.get_button(2)
+                self.butY = self.joystick.get_button(3)
                 self.L1 = self.joystick.get_button(6)
                 self.R1 = self.joystick.get_button(7)
                 self.L2 = self.joystick.get_button(8)

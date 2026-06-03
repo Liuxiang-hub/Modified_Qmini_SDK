@@ -71,6 +71,7 @@ void G1::Control() {
              << ", R_Tigh: " << rlController->joint_pos(7)
              << ", R_Knee: " << rlController->joint_pos(8)
              << ", R_Foot: " << rlController->joint_pos(9) << endl;
+        cout << endl;
 //        cout << "rpy: " << rlController->base_rpy.transpose() << endl;
     }
 }
