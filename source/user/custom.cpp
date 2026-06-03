@@ -59,7 +59,18 @@ void G1::Control() {
     control_count++;
     if (control_count % 150 == 0) {
         control_count = 0;
-        cout << "q: " << rlController->joint_pos.transpose() << endl;
+        // 左腿一行，每个位置用说明:值
+        cout << "L_Yaw: " << rlController->joint_pos(0)
+             << ", L_Pitch: " << rlController->joint_pos(1)
+             << ", L_Tigh: " << rlController->joint_pos(2)
+             << ", L_Knee: " << rlController->joint_pos(3)
+             << ", L_Foot: " << rlController->joint_pos(4) << endl;
+        // 右腿一行，每个位置用说明:值
+        cout << "R_Yaw: " << rlController->joint_pos(5)
+             << ", R_Pitch: " << rlController->joint_pos(6)
+             << ", R_Tigh: " << rlController->joint_pos(7)
+             << ", R_Knee: " << rlController->joint_pos(8)
+             << ", R_Foot: " << rlController->joint_pos(9) << endl;
 //        cout << "rpy: " << rlController->base_rpy.transpose() << endl;
     }
 }
