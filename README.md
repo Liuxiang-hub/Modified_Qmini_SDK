@@ -187,12 +187,14 @@ cd bin
 
 </div>
 
-## 🎬 演示动画（循环播放）
+## 🎬 演示动画
 
 <div align="center">
   <img src="assets/gifs/qmini_demo_01.gif" width="250" alt="演示动画 1" />
   <img src="assets/gifs/qmini_demo_02.gif" width="250" alt="演示动画 2" />
 </div>
+
+> 🚧 这是第一次部署，跌跌撞撞调整中……
 
 > 💡 高清原视频：[演示视频 1](assets/videos/qmini_demo_01.mp4) · [演示视频 2](assets/videos/qmini_demo_02.mp4)
 
