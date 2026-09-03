@@ -165,22 +165,36 @@ cd bin
 
 ---
 
-## 📷 实拍演示
+## 📷 制作过程实拍
 
 <div align="center">
-  <img src="assets/images/qmini_01.jpg" width="30%" alt="实拍 1" />
-  <img src="assets/images/qmini_02.jpg" width="30%" alt="实拍 2" />
-  <img src="assets/images/qmini_03.jpg" width="30%" alt="实拍 3" />
-  <img src="assets/images/qmini_04.jpg" width="30%" alt="实拍 4" />
-  <img src="assets/images/qmini_05.jpg" width="30%" alt="实拍 5" />
-  <img src="assets/images/qmini_06.jpg" width="30%" alt="实拍 6" />
-  <img src="assets/images/qmini_07.jpg" width="30%" alt="实拍 7" />
+
+<table>
+  <tr align="center">
+    <td><b>①</b><br><img src="assets/images/qmini_01.jpg" width="230" alt="步骤 1"></td>
+    <td><b>②</b><br><img src="assets/images/qmini_02.jpg" width="230" alt="步骤 2"></td>
+    <td><b>③</b><br><img src="assets/images/qmini_03.jpg" width="230" alt="步骤 3"></td>
+  </tr>
+  <tr align="center">
+    <td><b>④</b><br><img src="assets/images/qmini_04.jpg" width="230" alt="步骤 4"></td>
+    <td><b>⑤</b><br><img src="assets/images/qmini_05.jpg" width="230" alt="步骤 5"></td>
+    <td><b>⑥</b><br><img src="assets/images/qmini_06.jpg" width="230" alt="步骤 6"></td>
+  </tr>
+  <tr align="center">
+    <td colspan="3"><b>⑦</b><br><img src="assets/images/qmini_07.jpg" width="230" alt="步骤 7"></td>
+  </tr>
+</table>
+
 </div>
 
+## 🎬 演示动画（循环播放）
+
 <div align="center">
-  <video src="assets/videos/qmini_demo_01.mp4" controls width="45%"></video>
-  <video src="assets/videos/qmini_demo_02.mp4" controls width="45%"></video>
+  <img src="assets/gifs/qmini_demo_01.gif" width="250" alt="演示动画 1" />
+  <img src="assets/gifs/qmini_demo_02.gif" width="250" alt="演示动画 2" />
 </div>
+
+> 💡 高清原视频：[演示视频 1](assets/videos/qmini_demo_01.mp4) · [演示视频 2](assets/videos/qmini_demo_02.mp4)
 
 ---
 
