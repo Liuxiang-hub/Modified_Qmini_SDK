@@ -190,8 +190,8 @@ cd bin
 ## 🎬 演示动画
 
 <div align="center">
-  <video autoplay loop muted playsinline width="250" src="assets/videos/qmini_demo_01.mp4"></video>
-  <video autoplay loop muted playsinline width="250" src="assets/videos/qmini_demo_02.mp4"></video>
+  <img src="assets/gifs/qmini_demo_01.gif" width="250" alt="演示动画 1" />
+  <img src="assets/gifs/qmini_demo_02.gif" width="250" alt="演示动画 2" />
 </div>
 
 > 🚧 这是第一次部署，跌跌撞撞调整中……
