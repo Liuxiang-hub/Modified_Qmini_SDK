@@ -143,11 +143,11 @@ void RLController::joystick_command_process() {
     auto vx_min = configParams.vx_cmd_range.at(0);
     auto vx_max = configParams.vx_cmd_range.at(1);
     if (task_mode == 3 or task_mode == 4) {
-        /// stand / RL control mapping per joystick: use left stick axes
+        /// stand / RL control mapping per joystick: use right stick vertical axis for left/right yaw
         /// Axis[1] for forward/back (negative = forward)
-        /// Axis[0] for left/right (negative = left)
+        /// Axis[3] for left/right yaw (negative = left)
         vx_cmd = -vx_max * jsreader->Axis[1];
-        yr_cmd = -yr_max * jsreader->Axis[0];
+        yr_cmd = -yr_max * jsreader->Axis[3];
 
         if (fabs(yr_cmd) > 0.1 or configParams.kp_yaw_ctrl < 1e-2 or static_flag < 0.1) {
             _record_yaw = base_rpy[2];//todo
